@@ -6,9 +6,11 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 ## I.Aspects structurels
 
-> 1/Question très générale pour commencer : faire les recherches adéquates afin de pouvoir faireun schéma faisant apparaître les différents segments du réseau de manière générale :collecte,   transport,   distribution,   branchement,   desserte,   réseau   domestique.   Et   indiquer   sur   votreschéma ce qu’on appelle réseau d’accès. Trouver l’autre nom du réseau d’accès.
+> 1/Question très générale pour commencer : faire les recherches adéquates afin de pouvoir faire un schéma faisant apparaître les différents segments du réseau de manière générale :collecte, transport, distribution, branchement, desserte, réseau domestique. Et indiquer sur votreschéma ce qu’on appelle réseau d’accès. Trouver l’autre nom du réseau d’accès.
 
-...
+![boucle](./boucle-loc.drawio.svg)
+
+`https://www.acome.com/sites/default/files/marches/ssmarch/-2019-07-15/Guide%20CREDO%202018_Technologies%20et%20composants%20du%20rC%CC%A7seau%20d%27accC%CC%A7s.pdf` -> P8
 
 > 2/Rechercher les différents acronymes FTTxx et ce qu’ils signifient (jusqu’où arrive la fibre).Il n’est pas nécessaire d’être exhaustif.
 
@@ -30,7 +32,7 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 ...
 
-> 7/Toujours   dans   le   cas   d’un   réseau   GPON,   on   considère   une   fibre   qui   arrive   sur   un   SROdepuis le NRO. Quel est l’équipement qui va permettre à partir de cette fibre de desservir plusieursPBO ?
+> 7/Toujours dans le cas d’un réseau GPON, on considère une fibre qui arrive sur un SROdepuis le NRO. Quel est l’équipement qui va permettre à partir de cette fibre de desservir plusieursPBO ?
 
 ...
 
@@ -46,7 +48,7 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 ...
 
-> 11/En réseau FTTH, la desserte peut être mono-fibre (1 seule fibre est affectée par client)  oumulti-fibres (pour chaque client, 1 fibre est dédiée à chaque opérateur).Faire   un   schéma   au   niveau   du   PM   avec   des   fibres   arrivant   d’un   coté,   provenant   de   plusieursopérateurs,   et   des   fibres   repartant   de   l’autre   coté,   vers   plusieurs   clients,   lorsque   la   desserte   estmono-fibre puis recommencer lorsque la desserte est multi-fibres.La desserte multi-fibres est intéressante lorsqu’un abonné change d’opérateur. Expliquer.
+> 11/En réseau FTTH, la desserte peut être mono-fibre (1 seule fibre est affectée par client)  oumulti-fibres (pour chaque client, 1 fibre est dédiée à chaque opérateur).Faire un schéma au niveau du PM avec des fibres arrivant d’un coté, provenant de plusieursopérateurs, et des fibres repartant de l’autre coté, vers plusieurs clients, lorsque la desserte estmono-fibre puis recommencer lorsque la desserte est multi-fibres.La desserte multi-fibres est intéressante lorsqu’un abonné change d’opérateur. Expliquer.
 
 ...
 
@@ -126,11 +128,11 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 ...
 
-> 16/Vous avez ici un cas pratique d’utilisation du diagramme de l’oeil.Dans   la   norme   ITU-T  G.984.2,   sont   spécifiés   des   masques   de   conformité   pour   chaque   débit   etchaque sens de transmission. Ce sont les figures 2 et 3.En vous servant des données figure 3, reproduire sur le même système d’axes et avec une échellebien choisie les masques de deux diagramme de l’oeil pour deux débits différents (155,52 Mbits/s et1244,16 Mbits/s) afin de pouvoir les  comparer. Vous  pouvez tracer les  courbes  sur papier et enprendre une photo.En vous servant de vos connaissances en  R305, interpréter alors votre figure.
+> 16/Vous avez ici un cas pratique d’utilisation du diagramme de l’oeil.Dans la norme ITU-T  G.984.2, sont spécifiés des masques de conformité pour chaque débit etchaque sens de transmission. Ce sont les figures 2 et 3.En vous servant des données figure 3, reproduire sur le même système d’axes et avec une échellebien choisie les masques de deux diagramme de l’oeil pour deux débits différents (155,52 Mbits/s et1244,16 Mbits/s) afin de pouvoir les  comparer. Vous  pouvez tracer les  courbes  sur papier et enprendre une photo.En vous servant de vos connaissances en  R305, interpréter alors votre figure.
 
 ...
 
-> 18/Coupleurs optiquesQuelle est la fonction d’un coupleur optique ?On considère un coupleur 1 x 2 symétrique.Quelle est la perte de puissance en dB due à la division du signal ?En   considérant   la   situation   précédente   pour   laquelle   la   perte   maximale   est   de   28   dB,   et   ennégligeant toutes les autres sources de pertes, combien de coupleurs 1 x 2 pourraient être utiliséssuccessivement (en cascade) ?En imaginant mettre autant de coupleurs que nécessaire, combien d’utilisateurs pourront alors êtrereliés à partir d’une seule fibre issue de l’OLT ?Dans ce cas, combien de coupleurs 1 x 2 faut-il ?Donner un autre exemple de coupleurs qui permettrait de relier le même nombre d’utilisateurs àpartir d’une seule fibre.Vous pouvez accompagner vos réponses de schémas.
+> 18/Coupleurs optiquesQuelle est la fonction d’un coupleur optique ?On considère un coupleur 1 x 2 symétrique.Quelle est la perte de puissance en dB due à la division du signal ?En considérant la situation précédente pour laquelle la perte maximale est de 28 dB, et ennégligeant toutes les autres sources de pertes, combien de coupleurs 1 x 2 pourraient être utiliséssuccessivement (en cascade) ?En imaginant mettre autant de coupleurs que nécessaire, combien d’utilisateurs pourront alors êtrereliés à partir d’une seule fibre issue de l’OLT ?Dans ce cas, combien de coupleurs 1 x 2 faut-il ?Donner un autre exemple de coupleurs qui permettrait de relier le même nombre d’utilisateurs àpartir d’une seule fibre.Vous pouvez accompagner vos réponses de schémas.
 
 ...
 
@@ -138,7 +140,7 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 ...
 
-> 20/Quelle   est   la   technique   utilisée   pour   pouvoir   combiner   les   transmissions   de   plusieursutilisateurs sur une même fibre ? Expliquer son principe.Quel impact cela a t-il sur le débit ? Donner un exemple précis.
+> 20/Quelle est la technique utilisée pour pouvoir combiner les transmissions de plusieursutilisateurs sur une même fibre ? Expliquer son principe.Quel impact cela a t-il sur le débit ? Donner un exemple précis.
 
 ...
 

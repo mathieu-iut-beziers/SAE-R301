@@ -10,57 +10,130 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 ![boucle](./boucle-loc.drawio.svg)
 
-`https://www.acome.com/sites/default/files/marches/ssmarch/-2019-07-15/Guide%20CREDO%202018_Technologies%20et%20composants%20du%20rC%CC%A7seau%20d%27accC%CC%A7s.pdf` -> P8
+Source (P8) : `https://www.acome.com/sites/default/files/marches/ssmarch/-2019-07-15/Guide%20CREDO%202018_Technologies%20et%20composants%20du%20rC%CC%A7seau%20d%27accC%CC%A7s.pdf`
 
 > 2/Rechercher les différents acronymes FTTxx et ce qu’ils signifient (jusqu’où arrive la fibre).Il n’est pas nécessaire d’être exhaustif.
 
-...
+Acronymes   | Signification                     | Explication
+---------   |----------                         |---------
+ FTTH       | Fiber to the Home                 | Racordement de l'abonner jusqu'au reseaux operateur
+ FTTLA      | Fiber To The Last Amplifier       | Sur les reseaux finisant par du cable coaxial, c'est la derniere portion en fibre
+ FTTB       | Fiber To The Building             | De meme que pour le precedant mais cette foie ci uniquement sur les reseaux fibre
+ FTTN       | Fiber To The Node                 | Permet d'augmenter le debit en reduisant la taille du suivre en augmentant la proportion de fibre jusqu'au sous repartiteur
+ FTTDP      | Fiber To The Distribution Point   | C'est un resaux fibre qui se termine par du cuivre
+ FTTO       | Fiber To The Office               | Permet au entreprise davoir une fibre dedier
 
-> 3/Dans le cas de la fibre optique, expliquer ce qu’est une architecture point à point, et unearchitecture point multipoint.
+Source : `https://fibre.guide/deploiement/technologies`
 
-...
+> 3/Dans le cas de la fibre optique, expliquer ce qu’est une architecture point à point, et une architecture point multipoint.
+
+Dans une architecture point a point chaque terminaison a une extremiter sont relier dorectement sans dispositif intermediere.
+
+Dans une architecture point multipointn les noeuds du resaux sont connecter a plusieur terminaux.
+
+Source : `http://igm.univ-mlv.fr/~dr/XPOSE2007/ffraux_FTTH/solutions.html`
 
 >4/Les boucles locales optiques sont mutualisées (BLOM) ou dédiées (BLOD). Expliquer.Dans la suite, on ne s’intéressera pas aux BLOD.
 
-...
+Les boucles locales optiques mutualisées (BLOM) sont des reseaux a plusieur utilisateur qui sont tous connecter a un seul noeud.
+
+Les boucles locales optiques dédiées (BLOD) sont des redeaux fibre point a point directement relier au backbone.
+
+Source : `https://essonnenumerique.com/glossaire/blom-boucle-locale-optique-mutualisee/` & `https://wholesalefrance.orange.fr/fr/nos-reseaux/fibre-optique/`
 
 > 5/On considère un réseau GPON.Que veut dire le sigle GPON ?Qu’est-ce qu’un réseau GPON ?Préciser quelle est la norme des réseaux GPON.
 
-...
+Un GPON c'est un reseaux opique passive gigabit (Gigabit Passive Optical Network), c'est un reseaux optique point multipoint. Il est passif, il utilise une fibre pour plusieur utilisateur. Il est définie par la norme internationale ITU-T G.984.
 
-> 6/ Faire un schéma représentatif d’un réseau GPON avec :un NRO, plusieurs SRO, plusieurs PBO, plusieurs PTO, des clients.Le but est de visualiser l’architecture globale : un NRO peut-il être relié à un seul SRO ou plusieurs,etc. Les différents segments de réseau vus question 1 doivent apparaître.Pour chaque élément (NRO, SRO, PBO, PTO) donner une description rapide et significative pourvous.Trouver où se trouvent les PM (Points de mutualisation) sur le schéma et expliquer ce que celasignifie (pourquoi on les appelle ainsi).Chercher ensuite ce qu’est un OLT et préciser sur le schéma où il sera.Chercher aussi ce qu’est un ONU et préciser sur le schéma où il sera.
+Source : `https://www.tp-link.com/fr/blog/289/qu-est-ce-que-gpon-et-pourquoi-le-choisir-/` & `https://fr.wikipedia.org/wiki/GPON#:~:text=Le%20standard%20GPON%20succ%C3%A8de%20en,dans%20chaque%20sens%20de%20transmission.`
 
-...
+> 6/ Faire un schéma représentatif d’un réseau GPON avec :un NRO, plusieurs SRO, plusieurs PBO, plusieurs PTO, des clients.Le but est de visualiser l’architecture globale : un NRO peut-il être relié à un seul SRO ou plusieurs,etc. Les différents segments de réseau vus question 1 doivent apparaître.Pour chaque élément (NRO, SRO, PBO, PTO) donner une description rapide et significative pour vous.Trouver où se trouvent les PM (Points de mutualisation) sur le schéma et expliquer ce que celasignifie (pourquoi on les appelle ainsi).Chercher ensuite ce qu’est un OLT et préciser sur le schéma où il sera.Chercher aussi ce qu’est un ONU et préciser sur le schéma où il sera.
 
-> 7/Toujours dans le cas d’un réseau GPON, on considère une fibre qui arrive sur un SROdepuis le NRO. Quel est l’équipement qui va permettre à partir de cette fibre de desservir plusieursPBO ?
+![GPON](./GPON.drawio.svg)
 
-...
+Source : `https://lafibre.info/images/pon/202001_schema_blom_boucle_local_optique_mutualisee.pdf`
 
-> 8/On distingue les zones de déploiement très denses (ZTD) des zones de déploiement moinsdenses (ZMD). De plus, dans les ZTD sont définies des zones de basse densité, ZTD-BD. Trouvercomment, en France, se répartit le nombre total de lignes entre les trois types de zones.
+> 7/Toujours dans le cas d’un réseau GPON, on considère une fibre qui arrive sur un SRO depuis le NRO. Quel est l’équipement qui va permettre à partir de cette fibre de desservir plusieurs PBO ?
 
-...
+C'est un splitter a fibre optique, il permet de diviser le faisceau limineux en plusieur fibre.
+
+Source : `https://community.fs.com/fr/blog/what-is-a-fiber-optic-splitter-2.html`
+
+> 8/On distingue les zones de déploiement très denses (ZTD) des zones de déploiement moinsdenses (ZMD). De plus, dans les ZTD sont définies des zones de basse densité, ZTD-BD. Trouver comment, en France, se répartit le nombre total de lignes entre les trois types de zones.
+
+Les ZTD (ZONE TRÈS DENSE), partie du territoire définie par l’ARCEP, les operateurs doivent developper son propre reseaux (seul ou en colaboration), il doit amner la fibre depuis son NRo jusqu'au PM.
+
+Les ZMD (ZONE MOINS DENSE), partie du territoire définie par l’ARCEP, partie du teritoire ou la population est moins dense, elle impose donc une mutualisation des resaux.
+
+Source : `https://fibre.guide/deploiement/zmd` & `https://fibre.guide/deploiement/ztd`
 
 > 9/Ordres de grandeur :Un NRO peut desservir combien d’abonnés ?Le segment de fibre NRO-SRO peut faire jusqu’à quelle longueur en ZTD ? Et en ZMD ?Un PM peut desservir combien de lignes ?
 
 ...
 
-> 10/Expliciter ce que veulent dire le sens montant et le sens descendant (utiliser votre schémapour être précis).
+> 10/Expliciter ce que veulent dire le sens montant et le sens descendant (utiliser votre schéma pour être précis).
 
-...
+![GPON](./GPONSence.drawio.svg)
 
-> 11/En réseau FTTH, la desserte peut être mono-fibre (1 seule fibre est affectée par client)  oumulti-fibres (pour chaque client, 1 fibre est dédiée à chaque opérateur).Faire un schéma au niveau du PM avec des fibres arrivant d’un coté, provenant de plusieursopérateurs, et des fibres repartant de l’autre coté, vers plusieurs clients, lorsque la desserte estmono-fibre puis recommencer lorsque la desserte est multi-fibres.La desserte multi-fibres est intéressante lorsqu’un abonné change d’opérateur. Expliquer.
+Source : `https://reseaux.orange.fr/questions/adsl-vdsl2/debit-montant-descendant`
 
-...
+> 11/En réseau FTTH, la desserte peut être mono-fibre (1 seule fibre est affectée par client) ou multi-fibres (pour chaque client, 1 fibre est dédiée à chaque opérateur).Faire un schéma au niveau du PM avec des fibres arrivant d’un coté, provenant de plusieursopérateurs, et des fibres repartant de l’autre coté, vers plusieurs clients, lorsque la desserte est mono-fibre puis recommencer lorsque la desserte est multi-fibres.La desserte multi-fibres est intéressante lorsqu’un abonné change d’opérateur. Expliquer.
 
-> 12/En réseau FTTH, il existe différentes situations réglementaires :En ZTD, cas des immeubles de plus de 12 logementsEn ZTD, cas général des immeubles de moins de 12 logementsEn ZTD, cas particulier des immeubles isolés de moins de 12 logementsEn ZTD, poches de basse densitéEn ZMDPour chacune de ces 5 situations, trouver où sera situé le PM, ainsi que le PBO, combien de lignesle PM peut desservir, et si la desserte est  mono-fibre ou multi-fibres.Pour les situations où la desserte est  multi-fibres, trouver pourquoi.
+![pm-m](./pm-mono-fibres.drawio.svg)
 
-...
+![pm-m](./pm-multi-fibres.drawio.svg)
 
-> 13/Dans quel type de situation la fibre multimode est-elle utilisée ?Trouver également les différentes qualités de fibres multimodes qui existent.
+Elle est interesante car elle demande une intervention moindre d'un technicien lors du changement de fourniseur.
+
+Source : `https://lafibre.info/images/pon/202001_schema_blom_boucle_local_optique_mutualisee.pdf`
+
+> 12/En réseau FTTH, il existe différentes situations réglementaires :En ZTD, cas des immeubles de plus de 12 logements En ZTD, cas général des immeubles de moins de 12 logements. En ZTD, cas particulier des immeubles isolés de moins de 12 logements. En ZTD, poches de basse densité. En ZMD. Pour chacune de ces 5 situations, trouver où sera situé le PM, ainsi que le PBO, combien de lignesle PM peut desservir, et si la desserte est  mono-fibre ou multi-fibres.Pour les situations où la desserte est  multi-fibres, trouver pourquoi.
+
+Cas des immeubles de plus de 12 logements en ZTD :
+
+- PM en pied d'himeuble, jusqu'a 4 fibre par logement.
+- PBO jusqu'à 12 logements, distants de moins d'une centaine de mètres
+- Multi-fibres (pour regrouper plus d'aboner)
+
+Cas général des immeubles de moins de 12 logements en ZTD :
+
+- PM en armoire avec moins de 100 lignes en mono-fibre
+- PBO jusqu'à 12 logements, distants de moins d'une centaine de mètres
+- Multi-fibres (pour regrouper plus d'aboner)
+
+Cas particulier des immeubles isolés de moins de 12 logements en ZTD :
+
+- PM installé en combre, en borne ou en façade
+- PBO jusqu'à 12 logements, distants de moins d'une centaine de mètres
+- Multi-fibres (pour regrouper plus d'aboner)
+
+En ZTD, poches de basse densité :
+
+- PM installer avec moins de 300 lignes en mono-fibre.
+- PBO pour un seul local
+- Mono-fibre (pas besion de multi fibre)
+
+En ZMD :
+
+- PM installer avec moins de 1000 lignes en mono-fibre.
+- PBO qui desservent trois voire deux locaux
+- Mono-fibre (pas besion de multi fibre)
+  
+Source (P22 & 23) : `https://www.acome.com/sites/default/files/marches/ssmarch/-2019-07-15/Guide%20CREDO%202017_DC%CC%A7ploiement%20des%20rC%CC%A7seaux%20FTTH%20en%20ZMD.pdf`
+
+> 13/Dans quel type de situation la fibre multimode est-elle utilisée ? Trouver également les différentes qualités de fibres multimodes qui existent.
+
+Les fibres multimode sont utiliser sur de courte distance, elle sont moins chere que les monomodes et permete d'avoir un plus grand debit. Exemple de fobres :
+
+- Fibre multimode standard 50/125 : utilisée pour applications de courte distance,vitesses ~ 1 Gb/s.
+- Fibre multimode à large bande (OM3) : vitesses plus élevées pour réseaux de données à grande vitesse (SAN).
+- Fibre multimode à bande large à faible dispersion (OM4) : utilisée pour les applications à très haute vitesse et pour les réseaux de données de grande capacité.
+
+Source : `https://community.fs.com/fr/blog/advantages-and-disadvantages-of-multimode-fiber.html`
 
 ## II. Spécifications télécoms du réseau GPON
 
-### Dans cette partie, vous vous appuyerez sur la norme ITU-T G.984.2 pour la plupart desquestions. Préciser alors le numéro de la page.Toutes les questions de cette partie font référence au réseau GPON.
+### Dans cette partie, vous vous appuyerez sur la norme ITU-T G.984.2 pour la plupart desquestions. Préciser alors le numéro de la page.Toutes les questions de cette partie font référence au réseau GPON
 
 > 1/Quels sont les débits nominaux possibles dans le sens descendant ? Dans le sens montant ?
 

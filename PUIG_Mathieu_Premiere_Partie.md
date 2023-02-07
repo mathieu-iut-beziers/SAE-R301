@@ -137,51 +137,61 @@ Source : `https://community.fs.com/fr/blog/advantages-and-disadvantages-of-multi
 
 > 1/Quels sont les débits nominaux possibles dans le sens descendant ? Dans le sens montant ?
 
-...
+Les taux de transmission nominaux en direction descendante sont de 1244,160 Mbit/s et 2488,320 Mbit/s, tandis que les taux de transmission nominaux en direction montante sont de 155,520 Mbit/s, 622,080 Mbit/s, 1244,160 Mbit/s et 2488,320 Mbit/s. (pdf page 3)
 
-> 2/En vous appuyant sur la question précédente, donner un exemple de transmission symétriqueet de  transmission asymétrique.
+> 2/En vous appuyant sur la question précédente, donner un exemple de transmission symétriqueet de transmission asymétrique.
 
-...
+Une connexion symétrique est une connexion qui a un débit nominal identique en montant et en descendant. Tandis qu'une connexion asymétrique est une connexion où le débit est différent entre le sens montant et le sens descendant.
 
 > 3/Quelle est la situation la plus fréquemment rencontrée ?
 
-...
+La situation la plus fréquente est une connexion asymétrique.
 
 > 4/Quelles sont les deux méthodes possibles pour transmettre dans les deux sens ?
 
-...
+La transmission dans les deux sens est faisable en utilisant soit la technique de multiplexage par division de longueur d'onde sur une seule fibre, soit une transmission unidirectionnelle sur deux fibres.
 
 > 5/Quelle est la méthode de codage des bits ? Qu’est-ce que cela signifie en termes de signal ?
 
-...
+Le codage utilisé est du NRZ (Non-Return-to-Zero), avec un niveau élevé d'émission de lumière pour un "1" et un niveau faible d'émission de lumière pour un "0". (pdf page 12)
 
-> 6/Quelle est la plage de longueurs d’onde réservée au sens descendant ? Donner aussi la valeurmédiane. Calculer la bande de fréquences correspondante (en prenant un indice égal à 1).
+> 6/Quelle est la plage de longueurs d’onde réservée au sens descendant ? Donner aussi la valeur médiane. Calculer la bande de fréquences correspondante (en prenant un indice égal à 1).
 
-...
+La plage de longueur d'onde de fonctionnement en sens descendant sur les systèmes à une seule fibre est de 1480 nm à 1500 nm. La médiane est 1490 nm. La fréquence est de 2.01 × 10^14 Hz (f = 3 × 10^8 / (1490 × 10^-9)). (pdf page 12)
 
-> 7/Quelle est la plage de longueurs d’onde réservée au sens montant ? Donner aussi la valeurmédiane.Donner la bande de fréquences correspondante (en prenant un indice égal à 1).
+La plage de longueur d'onde de fonctionnement en sens descendant sur les systèmes à deux fibres est de 1260-1360nm. La médiane est 1310 nm. La fréquence est de 2.30 × 10^14 Hz (f = 3 × 10^8 / (1310 × 10^-9)). (pdf page 12)
 
-...
+> 7/Quelle est la plage de longueurs d’onde réservée au sens montant ? Donner aussi la valeur médiane.Donner la bande de fréquences correspondante (en prenant un indice égal à 1).
+
+La plage de longueur d'onde de fonctionnement en sens descendant est de 1260-1360nm.La médiane est 1310 nm. La médiane est 1310 nm. La fréquence est de 2.30 × 10^14 Hz (f = 3 × 10^8 / (1310 × 10^-9)). (pdf page 12)
 
 > 8/Citer la norme qui définit les fibres qui peuvent être utilisées dans un réseau GPON  (d’aprèsla norme ITU-T G.984.2).
 
-...
+La G.984.3 est la norme qui définit les exigences pour les fibres optiques utilisées pour les réseaux GPON. (pdf page 3)
 
 > 9/Ces fibres peuvent être du type SM, MM ou les deux ?
 
-...
+Les fibres utiliser sont des fibre SM et MM. (bas de page n°1)
 
-> 10/Dans la norme  ITU-T G.984.2 on lit qu’en sortie de l’OLT, dans le sens descendant, l’ORLdoit être d’au moins 32 dB. Expliquer ce que cela veut dire. Soyez précis. Traduire le nombre enpourcentage de puissances.
+> 10/Dans la norme  ITU-T G.984.2 on lit qu’en sortie de l’OLT, dans le sens descendant, l’ORL doit être d’au moins 32 dB. Expliquer ce que cela veut dire. Soyez précis. Traduire le nombre enpourcentage de puissances.
 
-...
+ORL veut dire "Optical Return Loss", et OLT "Optical Line Termination".
+
+La perte optique totale (ORL) entre la sortie de l'OLT et la fin de l'abonné doit être au moins de 32 dB. Un perte de 32dB revient a concerver 0.0631% de la puisance initiale.
 
 > 11/Quelle est la distance couverte maximale dans un réseau GPON ?
 
-...
+La distance maximal est de 20 km selon le tableau page 10 (bas de page).
 
 > 12/Il existe 3 classes d’atténuation, les classes A, B et C. Selon la classe, la plage d’atténuationn’est pas la même. Noter les valeurs et expliquer ce qu’elles veulent dire.
 
-...
+Classe      | plage d'atenuation
+---------   |----------
+ A          | 5-20
+ B          | 10-25
+ C          | 15-30
+
+Ces plage represente l'atenuation en bout de ligne. Source page 10 (bas de page).
 
 > 13/ Dans la norme  ITU-T G.984.2 on lit par exemple les spécifications suivantes :en sortie de l’OLT, dans le sens descendant, et pour un débit de 1 244 Mbits/s,
 
@@ -189,17 +199,18 @@ Source : `https://community.fs.com/fr/blog/advantages-and-disadvantages-of-multi
 ---------|----------|---------|---------|---------
  Mean launched power MIN | dBm | -4 | +1 | +5
  Mean launched power MAX | dBm | +1 | +6 | +9
+
 > Interpréter ce que ces données veulent dire (il n’est pas nécessaire de convertir en W)
 
-...
+C'est la puissance de minimal et maximal envoyer par l'OLT. Ces donne nous permete de choisire l'OLT adapter a nos besoin.
 
 > 14/Toujours dans le sens descendant et pour un débit de 1 244 Mbits/s, lorsqu’on lit que lasensibilité minimum du récepteur (au niveau de l’ONU) est de -25 dBm, qu’est-ce que cela veutdire ? Ici la conversion dans l’unité adéquate est demandée
 
-...
+C'est la valeur de puisance minimal que peut recevoir un ONU soit 3,16 uW.
 
 > 15/Définir le  ‵‵Bit error ratio′′ (ne pas confondre avec le Bit error rate). Comment doit-il êtrepour respecter la norme ? Donner une réponse claire si vous avez compris.
 
-...
+Le BER (Bit error ratio) c'est nombre de bits erronés divisé par le nombre total de bits transmis. Il doit etre de moins de 10^-10 et moins de 10^-4 pour une fibre en sens montant de class C+. Page du doc 38 et 16.
 
 > 16/Vous avez ici un cas pratique d’utilisation du diagramme de l’oeil.Dans la norme ITU-T  G.984.2, sont spécifiés des masques de conformité pour chaque débit etchaque sens de transmission. Ce sont les figures 2 et 3.En vous servant des données figure 3, reproduire sur le même système d’axes et avec une échellebien choisie les masques de deux diagramme de l’oeil pour deux débits différents (155,52 Mbits/s et1244,16 Mbits/s) afin de pouvoir les  comparer. Vous  pouvez tracer les  courbes  sur papier et enprendre une photo.En vous servant de vos connaissances en  R305, interpréter alors votre figure.
 

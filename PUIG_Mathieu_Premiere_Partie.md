@@ -212,31 +212,37 @@ C'est la valeur de puisance minimal que peut recevoir un ONU soit 3,16 uW.
 
 Le BER (Bit error ratio) c'est nombre de bits erronés divisé par le nombre total de bits transmis. Il doit etre de moins de 10^-10 et moins de 10^-4 pour une fibre en sens montant de class C+. Page du doc 38 et 16.
 
-> 16/Vous avez ici un cas pratique d’utilisation du diagramme de l’oeil.Dans la norme ITU-T  G.984.2, sont spécifiés des masques de conformité pour chaque débit etchaque sens de transmission. Ce sont les figures 2 et 3.En vous servant des données figure 3, reproduire sur le même système d’axes et avec une échellebien choisie les masques de deux diagramme de l’oeil pour deux débits différents (155,52 Mbits/s et1244,16 Mbits/s) afin de pouvoir les  comparer. Vous  pouvez tracer les  courbes  sur papier et enprendre une photo.En vous servant de vos connaissances en  R305, interpréter alors votre figure.
+> 16/Vous avez ici un cas pratique d’utilisation du diagramme de l’oeil.Dans la norme ITU-T  G.984.2, sont spécifiés des masques de conformité pour chaque débit etchaque sens de transmission. Ce sont les figures 2 et 3.En vous servant des données figure 3, reproduire sur le même système d’axes et avec une échellebien choisie les masques de deux diagramme de l’oeil pour deux débits différents (155,52 Mbits/s et 1244,16 Mbits/s) afin de pouvoir les  comparer. Vous  pouvez tracer les  courbes  sur papier et enprendre une photo.En vous servant de vos connaissances en  R305, interpréter alors votre figure.
 
-...
+![l’oeil](./img/oeuil.jpg)
+
+"On peut voir sur le diagramme de l'œil pour un débit de 155,52 Mb/s que l'œil est plus grand, ce debit est donc moins sensible au bruit.
+
+> 17/Budget optique. La situation la plus fréquente concernant le choix des débits est traitée en annexe A (p 32).La table A.1 fournit les seuils min et max de puissance injectée au niveau de l’OLT et de l’ONU. Elle fournit également les seuils de sensibilité en réception ainsi que la puissance maximale admise par le récepteur.De ce tableau résulte la table A.2 : pour les deux longueurs d’onde utilisées, la perte de puissance le long de la ligne entre l’OLT et l’ONU doit être supérieure à 13 dB et inférieure à 28 dB. Justifier, à partir de la table A.1, pourquoi la perte de puissance ne doit pas dépasser 28 dB pour les deux situations correspondant aux deux longueurs d’onde. Justifier, à partir de la table A.1, pourquoi la perte de puissance doit être d’au moins 13 dB pour lesdeux situations correspondant aux deux longueurs d’onde. En pratique, un OTDR peut servir à tester une liaison de ce type et vérifier que son budget optiquereste dans les limites permises.
+
+.
 
 > 18/Coupleurs optiquesQuelle est la fonction d’un coupleur optique ?On considère un coupleur 1 x 2 symétrique.Quelle est la perte de puissance en dB due à la division du signal ?En considérant la situation précédente pour laquelle la perte maximale est de 28 dB, et ennégligeant toutes les autres sources de pertes, combien de coupleurs 1 x 2 pourraient être utiliséssuccessivement (en cascade) ?En imaginant mettre autant de coupleurs que nécessaire, combien d’utilisateurs pourront alors êtrereliés à partir d’une seule fibre issue de l’OLT ?Dans ce cas, combien de coupleurs 1 x 2 faut-il ?Donner un autre exemple de coupleurs qui permettrait de relier le même nombre d’utilisateurs àpartir d’une seule fibre.Vous pouvez accompagner vos réponses de schémas.
 
 ...
 
-> 19/Existe-t-il des coupleurs non symétriques (par exemple 20 % / 80 %) ?Si oui, chercher dans quelle situation cela peut servir et expliquer.
+> 19/Existe-t-il des coupleurs non symétriques (par exemple 20 % / 80 %) ? Si oui, chercher dans quelle situation cela peut servir et expliquer.
 
-...
+Oui il en existe. il sont utilisés par...
 
-> 20/Quelle est la technique utilisée pour pouvoir combiner les transmissions de plusieursutilisateurs sur une même fibre ? Expliquer son principe.Quel impact cela a t-il sur le débit ? Donner un exemple précis.
+> 20/Quelle est la technique utilisée pour pouvoir combiner les transmissions de plusieurs utilisateurs sur une même fibre ? Expliquer son principe.Quel impact cela a t-il sur le débit ? Donner un exemple précis.
 
-...
+Un multiplexeur peut être utilisé pour connecter plusieurs utilisateurs sur la même fibre. Un multiplexeur en longueur d'onde fait passer des longueurs d'onde différentes dans la fibre selon l'abonné. Cependant, cela peut entraîner des pertes de débit.
 
-> 21/L’ONU d’un utilisateur reçoit-il les données destinées aux autres utilisateurs ? Si oui dans cecas qu’est-ce qu’il utilise pour sélectionner seulement les informations qui lui sont destinées ?
+> 21/L’ONU d’un utilisateur reçoit-il les données destinées aux autres utilisateurs ? Si oui dans ce cas qu’est-ce qu’il utilise pour sélectionner seulement les informations qui lui sont destinées ?
 
-...
+Un utilisateur reçoit les données destinées à tous les utilisateurs du réseau. L'ONU vas donc utilisé son identifiant universel pour sélectionner les informations qui lui sont destinées.
 
 > 22/Quelle est la technique qui permet de combiner le flux montant et le flux descendant sur lamême fibre ?
 
-...
+Pour realisée cela on utiliser le multiplexage en longeur d'onde (Wavelength Division Multiplexing). Cela consiste a utiliser différentes longueurs d'onde pour transmettre des données dans des directions opposées sur la même fibre.
 
 ## III. Perspectives d’évolution
 
-> On attend ici une petite étude des futurs réseaux GPON :première générationNG-PON1 (XG-PON), deuxième générationNG-PON2 (TWDM-PON), troisième génération NG-PON3 (WDM-PON).
+> On attend ici une petite étude des futurs réseaux GPON :première génération NG-PON1 (XG-PON), deuxième générationNG-PON2 (TWDM-PON), troisième génération NG-PON3 (WDM-PON).
 > Notamment : le nom de la norme qui en définit toutes les spécifications (lorsque c’est possible), les débits,les longueurs d’onde,les techniques de multiplexage,sachant que le but de l’évolution est de faire toujours plus et mieux pour l’utilisateur.

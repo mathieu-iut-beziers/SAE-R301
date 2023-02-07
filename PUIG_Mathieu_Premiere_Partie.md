@@ -8,7 +8,7 @@ Le but est d’acquérir une bonne connaissance du réseau d’accès fibre
 
 > 1/Question très générale pour commencer : faire les recherches adéquates afin de pouvoir faire un schéma faisant apparaître les différents segments du réseau de manière générale :collecte, transport, distribution, branchement, desserte, réseau domestique. Et indiquer sur votreschéma ce qu’on appelle réseau d’accès. Trouver l’autre nom du réseau d’accès.
 
-![boucle](./boucle-loc.drawio.svg)
+![boucle](./img/boucle-loc.drawio.svg)
 
 Source (P8) : `https://www.acome.com/sites/default/files/marches/ssmarch/-2019-07-15/Guide%20CREDO%202018_Technologies%20et%20composants%20du%20rC%CC%A7seau%20d%27accC%CC%A7s.pdf`
 
@@ -49,7 +49,7 @@ Source : `https://www.tp-link.com/fr/blog/289/qu-est-ce-que-gpon-et-pourquoi-le-
 
 > 6/ Faire un schéma représentatif d’un réseau GPON avec :un NRO, plusieurs SRO, plusieurs PBO, plusieurs PTO, des clients.Le but est de visualiser l’architecture globale : un NRO peut-il être relié à un seul SRO ou plusieurs,etc. Les différents segments de réseau vus question 1 doivent apparaître.Pour chaque élément (NRO, SRO, PBO, PTO) donner une description rapide et significative pour vous.Trouver où se trouvent les PM (Points de mutualisation) sur le schéma et expliquer ce que celasignifie (pourquoi on les appelle ainsi).Chercher ensuite ce qu’est un OLT et préciser sur le schéma où il sera.Chercher aussi ce qu’est un ONU et préciser sur le schéma où il sera.
 
-![GPON](./GPON.drawio.svg)
+![GPON](./img/GPON.drawio.svg)
 
 Source : `https://lafibre.info/images/pon/202001_schema_blom_boucle_local_optique_mutualisee.pdf`
 
@@ -73,15 +73,15 @@ Source : `https://fibre.guide/deploiement/zmd` & `https://fibre.guide/deploiemen
 
 > 10/Expliciter ce que veulent dire le sens montant et le sens descendant (utiliser votre schéma pour être précis).
 
-![GPON](./GPONSence.drawio.svg)
+![GPON](./img/GPONSence.drawio.svg)
 
 Source : `https://reseaux.orange.fr/questions/adsl-vdsl2/debit-montant-descendant`
 
 > 11/En réseau FTTH, la desserte peut être mono-fibre (1 seule fibre est affectée par client) ou multi-fibres (pour chaque client, 1 fibre est dédiée à chaque opérateur).Faire un schéma au niveau du PM avec des fibres arrivant d’un coté, provenant de plusieursopérateurs, et des fibres repartant de l’autre coté, vers plusieurs clients, lorsque la desserte est mono-fibre puis recommencer lorsque la desserte est multi-fibres.La desserte multi-fibres est intéressante lorsqu’un abonné change d’opérateur. Expliquer.
 
-![pm-m](./pm-mono-fibres.drawio.svg)
+![pm-m](./img/pm-mono-fibres.drawio.svg)
 
-![pm-m](./pm-multi-fibres.drawio.svg)
+![pm-m](./img/pm-multi-fibres.drawio.svg)
 
 Elle est interesante car elle demande une intervention moindre d'un technicien lors du changement de fourniseur.
 

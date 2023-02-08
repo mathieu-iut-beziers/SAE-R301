@@ -233,7 +233,7 @@ Donc les perte ne doivent pas exeder 28 dB pour garantire une bonne recption des
 - La perte maximal est de 28 dB, ce qui signifit un max de 9 coupleurs 1x2 successivement en cascade.
 - On peut relier jusqu'à 2^9=512 utilisateurs à partir d'une seule fibre issue de l'OLT.
 - Ce qui donne 256 coupleures (2^8).
-- On peut utiliser quatre coupleur 1 vers 128.
+- On peut utiliser quatre coupleur 1 vers 128. (source `https://lafibre.info/images/materiel/201306_prysmian_module_optique_baie_mec128.pdf`)
 
 > 19/Existe-t-il des coupleurs non symétriques (par exemple 20 % / 80 %) ? Si oui, chercher dans quelle situation cela peut servir et expliquer.
 
@@ -264,4 +264,6 @@ Les principales generations de GPON sont les suivantes :
   - 1577 nm (montante)
   - 1625 nm (montante)
   - 1650 nm (descendante)
-- NG-PON3 (WDM-PON) -> Cette generation est definie par la norme ITU-T. NG-PON3. Le WDM correspond au Wavelength Division Multiplexing. Cette generation prevoit un debit d'environt 100Gb/s.
+- NG-PON3 (WDM-PON) -> Cette generation est definie par une future norme pas encore definie. Le WDM correspond au Wavelength Division Multiplexing. Nous posedont peut d'info sur cette nouvelle generation, cette generation prevoit un debit d'environt 100Gb/s.
+
+Source (p29) : `https://www.theses.fr/2016ENST0076.pdf`

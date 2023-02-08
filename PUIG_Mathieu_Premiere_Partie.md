@@ -220,11 +220,20 @@ Le BER (Bit error ratio) c'est nombre de bits erronés divisé par le nombre tot
 
 > 17/Budget optique. La situation la plus fréquente concernant le choix des débits est traitée en annexe A (p 32).La table A.1 fournit les seuils min et max de puissance injectée au niveau de l’OLT et de l’ONU. Elle fournit également les seuils de sensibilité en réception ainsi que la puissance maximale admise par le récepteur.De ce tableau résulte la table A.2 : pour les deux longueurs d’onde utilisées, la perte de puissance le long de la ligne entre l’OLT et l’ONU doit être supérieure à 13 dB et inférieure à 28 dB. Justifier, à partir de la table A.1, pourquoi la perte de puissance ne doit pas dépasser 28 dB pour les deux situations correspondant aux deux longueurs d’onde. Justifier, à partir de la table A.1, pourquoi la perte de puissance doit être d’au moins 13 dB pour lesdeux situations correspondant aux deux longueurs d’onde. En pratique, un OTDR peut servir à tester une liaison de ce type et vérifier que son budget optiquereste dans les limites permises.
 
-.
+Les limites de perte dans la table 2 (A.2) sont definie en fonction des sensibilitées en reception et des puissnaces maximal du recepteur de la table 1 (A.1). La sesibilitée minial c'est la quantité minimale de puissance optique qui doit être reçue pour garantir la bonne réception des données. La puissance maximale admise c'est la quantité maximale de puissance optique que le récepteur peut gérer sans etre endommager.
 
-> 18/Coupleurs optiquesQuelle est la fonction d’un coupleur optique ?On considère un coupleur 1 x 2 symétrique.Quelle est la perte de puissance en dB due à la division du signal ?En considérant la situation précédente pour laquelle la perte maximale est de 28 dB, et ennégligeant toutes les autres sources de pertes, combien de coupleurs 1 x 2 pourraient être utiliséssuccessivement (en cascade) ?En imaginant mettre autant de coupleurs que nécessaire, combien d’utilisateurs pourront alors êtrereliés à partir d’une seule fibre issue de l’OLT ?Dans ce cas, combien de coupleurs 1 x 2 faut-il ?Donner un autre exemple de coupleurs qui permettrait de relier le même nombre d’utilisateurs àpartir d’une seule fibre.Vous pouvez accompagner vos réponses de schémas.
+Si les parte sont inferieur a 13 dB, le signale peut endomager le recpteur par surcharge. Si la perte est supériaure à 28 dB la puissance de reception peut etre inferieur a la sensibiliter maximal du recpteur ce qui peut entréner une mauvaise reception des données.
 
-...
+Donc les perte ne doivent pas exeder 28 dB pour garantire une bonne recption des donné tout en evitant d'endomager le recepeur.
+
+> 18/Coupleurs optiques. Quelle est la fonction d’un coupleur optique ? On considère un coupleur 1 x 2 symétrique. Quelle est la perte de puissance en dB due à la division du signal ? En considérant la situation précédente pour laquelle la perte maximale est de 28 dB, et en négligeant toutes les autres sources de pertes, combien de coupleurs 1 x 2 pourraient être utiliséssuccessivement (en cascade) ? En imaginant mettre autant de coupleurs que nécessaire, combien d’utilisateurs pourront alors êtrereliés à partir d’une seule fibre issue de l’OLT ? Dans ce cas, combien de coupleurs 1 x 2 faut-il ? Donner un autre exemple de coupleurs qui permettrait de relier le même nombre d’utilisateurs àpartir d’une seule fibre. Vous pouvez accompagner vos réponses de schémas.
+
+- Un coupleur optique est un composant qui permet de diviser ou de combiner des signaux optiques.
+- Yn coupleur 1x2 symétrique, sont egale a une division du signal par deux donc une perte 3 dB en moyenne.
+- La perte maximal est de 28 dB, ce qui signifit un max de 9 coupleurs 1x2 successivement en cascade.
+- On peut relier jusqu'à 2^9=512 utilisateurs à partir d'une seule fibre issue de l'OLT.
+- Ce qui donne 256 coupleures (2^8).
+- On peut utiliser quatre coupleur 1 vers 128.
 
 > 19/Existe-t-il des coupleurs non symétriques (par exemple 20 % / 80 %) ? Si oui, chercher dans quelle situation cela peut servir et expliquer.
 
@@ -232,7 +241,7 @@ Oui il en existe. il sont utilisés par...
 
 > 20/Quelle est la technique utilisée pour pouvoir combiner les transmissions de plusieurs utilisateurs sur une même fibre ? Expliquer son principe.Quel impact cela a t-il sur le débit ? Donner un exemple précis.
 
-Un multiplexeur peut être utilisé pour connecter plusieurs utilisateurs sur la même fibre. Un multiplexeur en longueur d'onde fait passer des longueurs d'onde différentes dans la fibre selon l'abonné. Cependant, cela peut entraîner des pertes de débit.
+Un multiplexeur peut être utilisé pour connecter plusieurs utilisateurs sur la même fibre. Un multiplexeur temporelle repartie equitablement le temps d'utilisation de la fibre communes entre les diferent utilisateur, ce qui implique donc une reduction du debit proportionnelle au nombres d'utilisateur sur la fibre.
 
 > 21/L’ONU d’un utilisateur reçoit-il les données destinées aux autres utilisateurs ? Si oui dans ce cas qu’est-ce qu’il utilise pour sélectionner seulement les informations qui lui sont destinées ?
 
@@ -244,5 +253,15 @@ Pour realisée cela on utiliser le multiplexage en longeur d'onde (Wavelength Di
 
 ## III. Perspectives d’évolution
 
-> On attend ici une petite étude des futurs réseaux GPON :première génération NG-PON1 (XG-PON), deuxième générationNG-PON2 (TWDM-PON), troisième génération NG-PON3 (WDM-PON).
+> On attend ici une petite étude des futurs réseaux GPON :première génération NG-PON1 (XG-PON), deuxième génération NG-PON2 (TWDM-PON), troisième génération NG-PON3 (WDM-PON).
 > Notamment : le nom de la norme qui en définit toutes les spécifications (lorsque c’est possible), les débits,les longueurs d’onde,les techniques de multiplexage,sachant que le but de l’évolution est de faire toujours plus et mieux pour l’utilisateur.
+
+Les principales generations de GPON sont les suivantes :
+
+- NG-PON1 (XG-PON) -> Cette generation est definie par la norme ITU-T G.983.3. Elle permet d'avoir un maximum de 10Gb/s en descendant et 2,5Gb/s en montant. Elle utilise un longeur d'onde de 1550 nm. Ce qui implque donc l'utilisation du multiplexage de l'ongueur d'onde.
+- NG-PON2 (TWDM-PON) -> Cette generation est definie par la norme ITU-T G.989. Elle permet d'avoir un maximum de 40Gb/s en descendant et 10Gb/s en montant. Elle utilise le TWDM (Time and Wavelength Division Multiplexing) comme technique de multiplexage. Elle utilise quatre longueurs d'ondes diffrente :
+  - 1490 nm (descendante)
+  - 1577 nm (montante)
+  - 1625 nm (montante)
+  - 1650 nm (descendante)
+- NG-PON3 (WDM-PON) -> Cette generation est definie par la norme ITU-T. NG-PON3. Le WDM correspond au Wavelength Division Multiplexing. Cette generation prevoit un debit d'environt 100Gb/s.

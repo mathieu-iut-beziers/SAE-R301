@@ -245,7 +245,7 @@ Un multiplexeur peut être utilisé pour connecter plusieurs utilisateurs sur la
 
 > 21/L’ONU d’un utilisateur reçoit-il les données destinées aux autres utilisateurs ? Si oui dans ce cas qu’est-ce qu’il utilise pour sélectionner seulement les informations qui lui sont destinées ?
 
-Un utilisateur reçoit les données destinées à tous les utilisateurs du réseau. L'ONU vas donc utilisé son identifiant universel pour sélectionner les informations qui lui sont destinées.
+Un utilisateur reçoit les données destinées à tous les utilisateurs du réseau. L'ONU vas utilisé son identifiant universel pour sélectionner les informations qui lui sont destinées.
 
 > 22/Quelle est la technique qui permet de combiner le flux montant et le flux descendant sur lamême fibre ?
 

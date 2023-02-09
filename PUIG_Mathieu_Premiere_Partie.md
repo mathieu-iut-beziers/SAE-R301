@@ -25,6 +25,8 @@ Acronymes   | Signification                     | Explication
 
 Source : `https://fibre.guide/deploiement/technologies`
 
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
 > 3/Dans le cas de la fibre optique, expliquer ce qu’est une architecture point à point, et une architecture point multipoint.
 
 Dans une architecture point à point chaque terminaison a une extrémité qui est reliée directement sans dispositif intermédiaire.
@@ -39,13 +41,19 @@ Les boucles locales optiques mutualisées (BLOM) sont des réseaux a plusieurs u
 
 Les boucles locales optiques dédiées (BLOD) sont des réseaux fibre point à point directement reliés au backbone.
 
-Source : `https://essonnenumerique.com/glossaire/blom-boucle-locale-optique-mutualisee/` & `https://wholesalefrance.orange.fr/fr/nos-reseaux/fibre-optique/`
+Source : `https://essonnenumerique.com/glossaire/blom-boucle-locale-optique-mutualisee/` 
+
+& `https://wholesalefrance.orange.fr/fr/nos-reseaux/fibre-optique/`
 
 > 5/On considère un réseau GPON. Que veut dire le sigle GPON ? Qu’est-ce qu’un réseau GPON ? Préciser quelle est la norme des réseaux GPON.
 
 Un GPON c'est un réseau optique passive gigabit (Gigabit Passive Optical Network), c'est un réseau optique point multipoint. Il est passif, il utilise une fibre pour plusieurs utilisateur. Il est défini par la norme internationale ITU-T G.984.
 
-Source : `https://www.tp-link.com/fr/blog/289/qu-est-ce-que-gpon-et-pourquoi-le-choisir-/` & `https://fr.wikipedia.org/wiki/GPON#:~:text=Le%20standard%20GPON%20succ%C3%A8de%20en,dans%20chaque%20sens%20de%20transmission.`
+Source : `https://www.tp-link.com/fr/blog/289/qu-est-ce-que-gpon-et-pourquoi-le-choisir-/`
+
+& `https://fr.wikipedia.org/wiki/GPON#:~:text=Le%20standard%20GPON%20succ%C3%A8de%20en,dans%20chaque%20sens%20de%20transmission.`
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 > 6/ Faire un schéma représentatif d’un réseau GPON avec :un NRO, plusieurs SRO, plusieurs PBO, plusieurs PTO, des clients. Le but est de visualiser l’architecture globale : un NRO peut-il être relié à un seul SRO ou plusieurs, etc. Les différents segments de réseau vus en question 1 doivent apparaître. Pour chaque élément (NRO, SRO, PBO, PTO) donner une description rapide et significative pour vous.Trouver où se trouvent les PM (Points de mutualisation) sur le schéma et expliquer ce que cela signifie (pourquoi on les appelle ainsi). Chercher ensuite ce qu’est un OLT et préciser sur le schéma où il sera. Chercher aussi ce qu’est un ONU et préciser sur le schéma où il sera.
 
@@ -67,15 +75,29 @@ Les ZMD (ZONES MOINS DENSES), parties du territoire définies par l’ARCEP, par
 
 Source : `https://fibre.guide/deploiement/zmd` & `https://fibre.guide/deploiement/ztd`
 
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
 > 9/Ordres de grandeur :Un NRO peut desservir combien d’abonnés ? Le segment de fibre NRO-SRO peut faire jusqu’à quelle longueur en ZTD ? Et en ZMD ? Un PM peut desservir combien de lignes ?
 
-...
+Un NRO peut desservir un minimum de 1000 abonnée.
+
+Source (p40) : `https://www.numerique66.fr/wp-content/uploads/sites/12/2021/06/Annexe-2.1-AIE-ING-CDC01-1.19-Regles-Ingenierie-AIE-1.pdf`
+
+Le segment de fibre NRO-SRO peut faire une longueur entre 4 km et 8 km au minimum et jusqu'à 20 km ou 40 km maximum.
+
+Source : `https://lafibre.info/index.php?action=dlattach;topic=34712.0;attach=59487;image` et le PDF précédent dans son ensemble.
+
+Un PM peut desservir une centaine de lignes voir 1000 lignes en ZMD pour un PMZ.
+
+Source : `https://fibre.guide/deploiement/pm`
 
 > 10/Expliciter ce que veulent dire le sens montant et le sens descendant (utiliser votre schéma pour être précis).
 
 ![GPON](./img/GPONSence.drawio.svg)
 
 Source : `https://reseaux.orange.fr/questions/adsl-vdsl2/debit-montant-descendant`
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 > 11/En réseau FTTH, la desserte peut être mono-fibre (1 seule fibre est affectée par client) ou multi-fibres (pour chaque client, 1 fibre est dédiée à chaque opérateur).Faire un schéma au niveau du PM avec des fibres arrivant d’un coté, provenant de plusieurs opérateurs, et des fibres repartant de l’autre coté, vers plusieurs clients, lorsque la desserte est mono-fibre puis recommencer lorsque la desserte est multi-fibres.La desserte multi-fibres est intéressante lorsqu’un abonné change d’opérateur. Expliquer.
 
@@ -86,6 +108,8 @@ Source : `https://reseaux.orange.fr/questions/adsl-vdsl2/debit-montant-descendan
 Elle est intéressante car elle demande une intervention moindre d'un technicien lors du changement de fournisseur.
 
 Source : `https://lafibre.info/images/pon/202001_schema_blom_boucle_local_optique_mutualisee.pdf`
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 > 12/En réseau FTTH, il existe différentes situations réglementaires :En ZTD, cas des immeubles de plus de 12 logements En ZTD, cas général des immeubles de moins de 12 logements. En ZTD, cas particulier des immeubles isolés de moins de 12 logements. En ZTD, poches de basse densité. En ZMD. Pour chacune de ces 5 situations, trouver où sera situé le PM, ainsi que le PBO, combien de lignes le PM peut desservir, et si la desserte est  mono-fibre ou multi-fibres.Pour les situations où la desserte est  multi-fibres, trouver pourquoi.
 
@@ -173,6 +197,8 @@ La G.984.3 est la norme qui définit les exigences pour les fibres optiques util
 
 Les fibres utiliser sont des fibre SM et MM. (bas de page n°1)
 
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
 > 10/Dans la norme  ITU-T G.984.2 on lit qu’en sortie de l’OLT, dans le sens descendant, l’ORL doit être d’au moins 32 dB. Expliquer ce que cela veut dire. Soyez précis. Traduire le nombre en pourcentage de puissances.
 
 ORL veut dire "Optical Return Loss", et OLT "Optical Line Termination".
@@ -212,6 +238,8 @@ C'est la valeur de puissance minimale que peut recevoir un ONU soit 3,16 uW.
 
 Le BER (Bit error ratio) c'est nombre de bits erronés divisé par le nombre total de bits transmis. Il doit être de moins de 10^-10 et moins de 10^-4 pour une fibre en sens montant de class C+. Page du doc 38 et 16.
 
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
 > 16/Vous avez ici un cas pratique d’utilisation du diagramme de l’oeil.Dans la norme ITU-T  G.984.2, sont spécifiés des masques de conformité pour chaque débit et chaque sens de transmission. Ce sont les figures 2 et 3.En vous servant des données figure 3, reproduire sur le même système d’axes et avec une échelle bien choisie les masques de deux diagramme de l’oeil pour deux débits différents (155,52 Mbits/s et 1244,16 Mbits/s) afin de pouvoir les  comparer. Vous  pouvez tracer les  courbes  sur papier et en prendre une photo.En vous servant de vos connaissances en  R305, interpréter alors votre figure.
 
 ![l’oeil](./img/oeuil.jpg)
@@ -237,7 +265,7 @@ Donc les perte ne doivent pas excéder 28 dB pour garantir une bonne réception 
 
 > 19/Existe-t-il des coupleurs non symétriques (par exemple 20 % / 80 %) ? Si oui, chercher dans quelle situation cela peut servir et expliquer.
 
-Oui il en existe. il sont utilisés par...
+Oui, il en existe. Ils sont utilisés, par exemple avec un coupleur 20/80, pour séparer sur une ligne un seul abonné et continuer cette fibre pour desservir quatre autre abonné.
 
 > 20/Quelle est la technique utilisée pour pouvoir combiner les transmissions de plusieurs utilisateurs sur une même fibre ? Expliquer son principe.Quel impact cela a t-il sur le débit ? Donner un exemple précis.
 
@@ -250,6 +278,8 @@ Un utilisateur reçoit les données destinées à tous les utilisateurs du rése
 > 22/Quelle est la technique qui permet de combiner le flux montant et le flux descendant sur la même fibre ?
 
 Pour réaliser cela on utiliser le multiplexage en longueur d'onde (Wavelength Division Multiplexing). Cela consiste a utiliser différentes longueurs d'ondes pour transmettre des données dans des directions opposées sur la même fibre.
+
+<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 ## III. Perspectives d’évolution
 

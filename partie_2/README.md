@@ -129,9 +129,9 @@ PBO       | 3 (1/étage)    | 70,5€        | 212€
 |ONU (x7)                       | 560 €      |
 |PTO (x7)                       | 231 €      |
 |PBO (x3)                       | 212 €      |
-|Répartiteur Optique 1*2(x1)    | 212 €      |
-|PBO (x3)                       | 212 €      |
-|Coût Total                     | 6 906,55 € |
+|Répartiteur Optique 1*2(x1)    | 10,20 €    |
+|Répartiteur Optique 1*3(x1)    | 15,60 €    |
+|Coût Total                     | 7 177,90 € |
 
 ### Source prix optique
 
@@ -147,7 +147,7 @@ PBO       | 3 (1/étage)    | 70,5€        | 212€
 
 ## Partie genie civil
 
-Pour l'étude préliminaire, on peut estimer le temps nécessaire est d'environ 40 heures de d'ingénieur RT. Pour réaliser c'est tâches : la collecte des données de terrain, l'étude de faisabilité, la conception de l'infrastructure, la préparation des plans et des documents techniques, l'évaluation des coûts et des risques, l'obtention des autorisations réglementaires.
+Pour l'étude préliminaire, on peut estimer le temps nécessaire est d'environ 40 heures de d'ingénieur RT. Pour réaliser c'est tâches : la collecte des données de terrain, l'étude de faisabilité, la conception de l'infrastructure, la préparation des plans et des documents techniques, l'évaluation des coûts et des risques, l'obtention des autorisations réglementaires auprès des autorité local.
 
 Pour la partie génie civil du chantier, il faudra environ 400 heures de travail d'un technicien supérieur génie civil, 160 heures d'un technicien bâtiment, 80 heures d'un ouvrier bâtiment et 20 heures d'un ingénieur RT. Cela correspond à un coût total d'environ 49 200 euros.
 
@@ -161,13 +161,13 @@ D'àpres les étude du marché il faudrait 1 heure pour 100 mètre de fibre à d
 
 Pour effectuer ceci il faut compter 1310m x 0.5h = 655h minimum et 1310 x 1h = heure maximum. Donc en moyenne 983 h. Si j'ajoute à ça le temps de pose d'une chambre de tirage au minimum une demie journée et au maximum 2 jours pour les pose les plus compliqué. Je prend en moyenne 1 jours pour la pose, cela mène à 1007h de travail.
 
-Nous supposont une durée totale des travaux de 4 semaines soit environ 140 heures de travail), nous pouvons estimer le coût total de la main d'œuvre comme suit:
+Nous supposont une durée totale des travaux de 4 semaines soit environ 140 heures de travail, nous pouvons estimer le coût total de la main d'œuvre comme suit:
 
 salaire brut: 1,28 x salaire net.
 coût total employeur : 1,3 x salaire brut.
 
-Ingénieur RT (20 heures) : 7 936 € (198,40 € x 45 x 1,3)
-Technicien RT (40 heures)*2 : 5 518 € (136,96 € x 45 x 1,3)
-Technicien bâtiment (20 heures) : 2 528 € (126,40 € x 25 x 1,3)
-Ouvrier bâtiment (60 heures)*4 : 8 579,2 € (112,64 € x 65 x 1,3)
-Bureau d'étude : 20 heures d'ingénieur RT à 154 €/jour, soit 7 700 €.
+Bureau d'étude : d'ingénieur RT (20 heures) x 3 : 12012 € (154 € x 20 x 1,3 x 3)
+Technicien RT (40 heures) x 2 employés : 11024 € (106 € x 40 x 1,3 x 2)
+Technicien bâtiment (25 heures) : 3185 € (98 € x 25 x 1,3)
+Ouvrier bâtiment (80 heures) x 4 employés : 36608 € (88 € x 80 x 1,3 x 4)
+Technicien supérieur génie civil (10 heures) : 1560 € (120 € * 10 * 1.3)

@@ -116,7 +116,7 @@ Il nous faut donc prévoir pour la liaison dans les fourreau et l'avenir :
 
   Total longueur fibre optique = 1,6185km -> On prend une marge de +- 20% -> 1.9km
 
-  coût fibre fourreau : 3.628,60 € HT | 4397,246€ TTC
+  coût fibre fourreau : 3.628,60 € HT | 4397,24€ TTC
   
     Gain a ajouter : 
      - CT2 -> B1/B2 : 37.5m *2
@@ -129,11 +129,29 @@ Il nous faut donc prévoir pour la liaison dans les fourreau et l'avenir :
 
 Matériel Optique :
 
-ONU * 7 :
+ONU * 7 : 64€ HT/unité -> 448€ HT
 
 PTO * 7 : 27,42 € HT/unité -> 191.94€ HT
 
 PBO * 3(1/étage) : 58,77 € HT/unité -> 176,31€ HT
+
+
+
+### Budget Optique Total : 
+
+|Matériel|Prix HT|Prix TTC|
+|---|---|---|
+|Gaine optique (150m)|483,15€|579,80€|
+|Fibre Optique (1.9km)|3 628,60€|4 397,24€|
+|ONU (x7)|448€|560€|
+|PTO (x7)|191,94€|230,32€|
+|PBO (x3)|176,31€|211,57|
+
+|Coût Total|HTT|TTC|
+|---|---|---|
+||4928€ HT|5978,93€ TTC|
+
+
 
 Génie civil :
 

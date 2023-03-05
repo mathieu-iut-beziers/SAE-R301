@@ -8,7 +8,7 @@ Tables des matieres :
 
 - Contexte
 - Notre solution
-- Les couts
+- Les couts (financié et hummains)
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
@@ -17,6 +17,7 @@ Avec la participation de Caubel Aksel, Alleaume Julien et Puig Mathieu.
 <div style="page-break-after: always; visibility: hidden"></div>
 
 </br></br></br>
+
 ## Contexte
 
 </br></br></br>
@@ -51,7 +52,7 @@ Plan envisagé :
 
 </br></br></br>
 
-### Explication de ka solution envisagé
+### Explication de la solution envisagé
 
 </br></br></br>
 
@@ -65,134 +66,108 @@ En résumé, nous avons prévu une solution de passage de câble souterrain avec
 
 <div style="page-break-after: always; visibility: hidden"></div>
 
-Gaine Optique :
+## Les couts
 
-    - Chemin Goudronés :
+### Partie optique & materielle
 
-    ```
-    - Il faut que la gaine soit mise sous 80cm.
-    - Doit être en acier ou en PVC rigide. 
-    - Entouré de Sable / de gravier pour la soliditer 
-    ```
+Nous avons pris en compte les spécificités de la mise en place de la gaine selon le type de chemin. Pour les chemins goudronnés, nous avons prévu que la gaine soit mise sous 80cm de profondeur pour protéger la fibre optique. La gaine sera en acier ou en PVC rigide pour garantir sa résistance. Elle sera également entourée de sable ou de gravier pour assurer sa solidité.
 
-    - Chemin Sableux :
+Pour les chemins sableux, nous avons décidé d'enterrer la gaine à 80cm de profondeur, au lieu des 60cm préconisés en cas de futur goudronnage. Cette mesure vise à renforcer la solidité de la gaine et à prévoir d'éventuels travaux de construction ultérieurs.
 
-Longueur :
+Nous avons prévu des répartiteurs optiques dans les chambres de tirage CT2 et CT3 pour les futurs raccordements des nouveaux bâtiments. Dans la chambre de tirage CT2, nous avons opté pour un répartiteur optique un vers trois car les deux futurs bâtiments auront leurs propres PM (selon les normes de ZTD). Pour la chambre de tirage CT3, nous avons choisi un coupleur un vers deux car les deux futurs bâtiments de CT3 pourront avoir un PM mutualisé pour les deux bâtiments.
 
-- NRO -> CT1 = 1125 m
-- CT1 -> CT2 = 112.5 m
-- CT2-> CT3 = 72.5 m
-- CT3 -> CT4 = 207.5 m
-- CT4 -> Immeuble standing = 48.5m
-Donc NRO -> immeuble = 1566m
-Partie goudronnée =
+Deferentre longeures utiles pour notre projet :
 
-Longueur dans l'allée sablonneuse à creuser et reboucher = 48.5m
-Longueur de trottoir à excaver et reboucher = 207.5m
-Longueur de fourreau à acheter = 256m
-Chambre de tirage à rajouter = 2
+Point A   | Point B           | Distance a parcourir A <-> B
+--------- |----------         |---------
+ NRO      | CT1               | 1125 m
+ CT1      | CT2               | 112.5 m
+ CT2      | CT3               | 72.5 m
+ CT3      | CT4               | 207.5 m
+ CT4      | Immeuble standing | 48.5 m
+ NRO      | Immeuble standing | 1566 m
 
-Coût matériaux :
+Prevision des longueures de fibres :
 
-Fibre optique G.657.A2 :
+Point A   | Point B            | Distance de la liaison A <-> B
+--------- |----------          |---------
+NRO       | PM                 | 1.0km
+PM        | CT1                | 102.5m
+CT1       | CT2                | 112.5m
+CT2       | CT3                | 72.5m
+CT3       | CT4                | 207.5m
+CT4       | Immeuble Standing  | 48.5m
 
-- prix : 1.928,62 € HT /km | 2.314,34 € TTC /km
-- norme : G.657.A2
-
-On considère un immeuble = 5/6 étages -> 20m de hauteur.
-5 * 20 = 100m pour les back-bones
-Raccordement par logement (10m)
-
-On estime que aucun logement présent est relié en optique et que les logements déjà existant sont en ADSL.
-Il nous faut donc prévoir pour la liaison dans les fourreau et l'avenir :
-
-    Liaison NRO -> PM : 1km
-    Liaison PM -> CT1 : 102.5m 
-    Liaison CT1 -> CT2 : 112.5m
-    Liaison CT2 -> CT3 : 72.5m
-    Liaison CT3 -> CT4 : 207.5m
-    Liaison CT4 -> Immeuble Standing :  48.5m
-    Liaison CT2 -> Future B1 / B2 : 37.5m / 37.5m
-
-  Total longueur fibre optique = 1,6185km -> On prend une marge de +- 20% -> 1.9km
-
-  coût fibre fourreau : 3.628,60 € HT | 4397,24€ TTC
+Étant donné que nous estimons que aucun logement n'est actuellement relié en fibre optique, il est nécessaire de prévoir de la fibre pour le raccordement de l'immeuble. Nous avons choisi la fibre optique G.657.A2 pour cette liaison, qui coûte 2 314,34 € TTC par kilomètre. Nous avons estimé que la longueur totale de fibre nécessaire sera d'environ 1,6 km, mais nous avons ajouté une marge de sécurité de 20%, soit un total de 1,9 km. Le coût total de la fibre s'élève donc à 4 397,24 € TTC.
   
-    Gain a ajouter : 
-     - CT2 -> B1/B2 : 37.5m *2
-     - CT3 -> Immeuble Standing : 48.5m
+Prevision des longueures de fourreau :
 
-    Total longueur de gaine : 123.5m -> On prend une marge de +-20% -> 148.2m arrondi à 150m
-  A raison de 30m pour 96,63 € HT  / 115,96 € TTC :
-  
-    coût gaine : 483,15€ HT | 579,8 € TTC
+Point A   | Point B            | Distance de la liaison A <-> B
+--------- |----------          |---------
+CT2       | B1                 | 37.5m
+CT2       | B2                 | 37.5m
+CT3       | CT4 :              | 207.5m
+CT4       | Immeuble Standing  | 48.5m
+
+La longueur totale de fourreau nécessaire pour le raccordement de l'immeuble est de 331 mètres. Nous avons ajouté une marge de sécurité de 20% pour tenir compte des éventuels imprévus, soit un total de 397,2 mètres, arrondi à 390 mètres car les tronçons font 30 mètres. Au prix de 115,95 € TTC par tronçon, le coût total des fourreaux est de 1 507,42 € TTC.
 
 Matériel Optique :
 
-ONU * 7 : 64€ HT/unité -> 448€ HT
+ Matériel | Quantité       | Prix unitée  | Total
+--------- |----------      |---------     |---------
+ONU       | 7              | 76.8€        | 560€
+PTO       | 7              | 32,9€        | 231€
+PBO       | 3 (1/étage)    | 70,5€        | 212€
 
-PTO * 7 : 27,42 € HT/unité -> 191.94€ HT
+### Budget Optique Total
 
-PBO * 3(1/étage) : 58,77 € HT/unité -> 176,31€ HT
+|Matériel                       |Prix TTC    |
+|-------------------------------|----------  |
+|Fourreau                       | 1 507,42 € |
+|Chambre de Tirage (x2)         | 244,44  €  |
+|Fibre Optique (1.9km)          | 4 397,24 € |
+|ONU (x7)                       | 560 €      |
+|PTO (x7)                       | 231 €      |
+|PBO (x3)                       | 212 €      |
+|Répartiteur Optique 1*2(x1)    | 212 €      |
+|PBO (x3)                       | 212 €      |
+|Coût Total                     | 6 906,55 € |
 
+### Source prix optique
 
+|Matériel|Lien|
+|---|---|
+|Chambre de tirage|https://www.mypum.fr/reseaux-secs/chambres-regards-et-bornes-telecom/chambres-de-telecommunication/chambres-telecom-beton/produits/P2738?articleId=46728|
+|Bobine Fibre|https://www.fs.com/fr/products/70220.html|
+|Gaine|https://www.fs.com/fr/products/70220.html|
+|ONU|https://www.amazon.fr/Elfcam%C2%AE-Fibre-Optique-Monomode-Ethernet/dp/B0BFFQ2VPN/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1WQKKG4VR5FX0&keywords=ONU+fibre&qid=1678045507&sprefix=onu+fibre+%2Caps%2C85&sr=8-1|
+|PTO||
+|répartiteur optique 1*3|https://www.fs.com/fr/products/145746.html?attribute=31852&id=592533|
+|répartiteur optique 1*2|https://www.fs.com/fr/products/12493.html?attribute=31845&id=592467|
 
-### Budget Optique Total : 
+## Partie genie civil
 
-|Matériel|Prix HT|Prix TTC|
-|---|---|---|
-|Gaine optique (150m)|483,15€|579,80€|
-|Fibre Optique (1.9km)|3 628,60€|4 397,24€|
-|ONU (x7)|448€|560€|
-|PTO (x7)|191,94€|230,32€|
-|PBO (x3)|176,31€|211,57|
+Pour l'étude préliminaire, on peut estimer le temps nécessaire est d'environ 40 heures de d'ingénieur RT. Pour réaliser c'est tâches : la collecte des données de terrain, l'étude de faisabilité, la conception de l'infrastructure, la préparation des plans et des documents techniques, l'évaluation des coûts et des risques, l'obtention des autorisations réglementaires.
 
-|Coût Total|HTT|TTC|
-|---|---|---|
-||4928€ HT|5978,93€ TTC|
+Pour la partie génie civil du chantier, il faudra environ 400 heures de travail d'un technicien supérieur génie civil, 160 heures d'un technicien bâtiment, 80 heures d'un ouvrier bâtiment et 20 heures d'un ingénieur RT. Cela correspond à un coût total d'environ 49 200 euros.
 
+Pour la démolition de la dalle de goudron, la location d'une micropelle d’1 tonne est d'environ 200 € par jour et des autres équipement il y en a pour 500€ donc 700€ par jour de locations de matériels.
 
+La partie goudronnée est de 207.5m. Pour reboucher la tranché de groudrons. On ajoute 22,50€ le mètre carré de bitume soit 207.5m*22.50€ = 4668,75€.
 
-Génie civil :
+Nettoyer les fourreaux existant afin d'avoir une facilité de tirage pour le projet et future projet. Il y a 1310m d'ancien fourreau à nettoyer cela coutera en moyenne 400€ par 100m ce qui fera un coût de 13,1*400 = 5240€.
 
-Nettoyer les fourreaux existant.
-
-salaire net ingénieur RT: 154 €
-salaire net technicien RT: 106 €
-salaire net technicien bâtiment : 98 €
-salaire net ouvrier bâtiment : 88 €
-salaire net technicien supérieur génie civil: 120 €
-salaire net technicien supérieur : 103 €
-salaire net technicien supérieur informatique : 110 €
-salaire net technicien supérieur réseau : 113 €
-
-salaire brut: 1,28 x salaire net
-coût total employeur : 1,3 x salaire brut
-
-D'àpres les étude du marché il faudrait 30min à 1 heure pour 1 mètre de fibre à déployer dans une rue non équipé de goutière. Ce qui signifie creuser, déployer et remblayer.
+D'àpres les étude du marché il faudrait 1 heure pour 100 mètre de fibre à déployer dans une rue non équipé de goutière. La longueur de fourreaux à déployer est de 2000m donc il fera 20h pour installer et tirer la fibre à travers les nouveaux fourreaux.
 
 Pour effectuer ceci il faut compter 1310m x 0.5h = 655h minimum et 1310 x 1h = heure maximum. Donc en moyenne 983 h. Si j'ajoute à ça le temps de pose d'une chambre de tirage au minimum une demie journée et au maximum 2 jours pour les pose les plus compliqué. Je prend en moyenne 1 jours pour la pose, cela mène à 1007h de travail.
 
-## A calculer plus tard l'etude du chantier ingénieurs NOUS
+Nous supposont une durée totale des travaux de 4 semaines soit environ 140 heures de travail), nous pouvons estimer le coût total de la main d'œuvre comme suit:
 
-Le technicien supérieur génie civil peut intervenir pour les travaux d'infrastructures de génie civil, notamment la création de tranchées pour le passage des câbles de fibre optique et la mise en place des PM, PBO et PTO. Il peut également superviser les travaux de terrassement et d'installation de poteaux et armoires de rue si nécessaire.
+salaire brut: 1,28 x salaire net.
+coût total employeur : 1,3 x salaire brut.
 
-Le technicien supérieur informatique peut intervenir pour l'installation des équipements actifs (switchs, routeurs, etc.) qui permettent d'assurer la connectivité des logements à la fibre optique. Il peut également intervenir pour la configuration et la mise en service des équipements et des réseaux.
-
-Le technicien supérieur réseau peut intervenir pour la mise en place des équipements passifs (câbles, boîtiers de raccordement, etc.) et pour la configuration des réseaux de fibre optique. Il peut également intervenir pour le test et la validation de la qualité de la connexion et de la bande passante.
-
-En supposant une durée totale des travaux de 3 semaines (soit environ 140 heures de travail), nous pouvons estimer le coût total de la main d'œuvre comme suit:
-
-Ingénieur RT (40 heures) : 7 936 € (198,40 € x 45 x 1,3)
-Technicien RT (40 heures) : 5 518 € (136,96 € x 45 x 1,3)
+Ingénieur RT (20 heures) : 7 936 € (198,40 € x 45 x 1,3)
+Technicien RT (40 heures)*2 : 5 518 € (136,96 € x 45 x 1,3)
 Technicien bâtiment (20 heures) : 2 528 € (126,40 € x 25 x 1,3)
-Ouvrier bâtiment (60 heures) : 8 579,2 € (112,64 € x 65 x 1,3)
-
-Ensuite, il faudra poser des câbles de type G657A2, qui sont des câbles adaptés pour la desserte d'immeubles. En effet, ces câbles sont plus souples que les câbles standards, ce qui les rend plus facilement installables dans les parties communes d'un bâtiment. Ils ont également une meilleure résistance à la courbure, ce qui permet de les courber sans risquer de les endommager. Il est donc judicieux d'utiliser ce type de câble pour la desserte des logements dans l'immeuble.
-
-Pour l'étude préliminaire, on peut estimer le temps nécessaire à environ 40 heures d'ingénieur RT et 20 heures de technicien RT, soit un coût total d'environ 8 820 euros. Pour la partie génie civil du chantier, il faudra environ 400 heures de travail d'un technicien supérieur génie civil, 160 heures d'un technicien bâtiment, 80 heures d'un ouvrier bâtiment et 20 heures d'un ingénieur RT. Cela correspond à un coût total d'environ 49 200 euros.
-
-En prenant en compte l'ensemble des coûts, on peut estimer que le projet coûtera environ 80 000 euros, avec une durée totale d'environ 4 semaines pour la partie génie civil
-
-Bureau d'étude : 50 heures d'ingénieur RT à 154 €/jour, soit 7 700 €.
-Génie civil : 200 heures de technicien supérieur
+Ouvrier bâtiment (60 heures)*4 : 8 579,2 € (112,64 € x 65 x 1,3)
+Bureau d'étude : 20 heures d'ingénieur RT à 154 €/jour, soit 7 700 €.

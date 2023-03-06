@@ -178,8 +178,8 @@ La durée total des travaux est estimé à 217 heures soit environ 5 semaines de
 
 | Poste                             | Heures   | Total    |
 | ---                               | ---      | ---      |
-| Partie étude                      | 110      |  |
-| Technicien RT                     | 35       |    
+| Partie étude                      | 110      |          |
+| Technicien RT                     | 35       |          |
 | Technicien bâtiment               | 16       | 3 185 €  |
 | Ouvrier bâtiment                  | 8        | 36 608 € |
 | Technicien supérieur génie civil  | 20       | 1 560 €  |

@@ -8,11 +8,13 @@ Tables des matières :
 
 - Contexte
 - Notre solution
-- Les coûts (financiers et humains)
+- Partie optique & matérielle
+- Partie genie civil
+- Conclusion
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
-Avec la participation de Caubel Aksel, Alleaume Julien et Puig Mathieu.
+#### Avec la participation de Caubel Aksel, Alleaume Julien et Puig Mathieu.
 
 <div style="page-break-after: always; visibility: hidden"></div>
 
@@ -66,9 +68,7 @@ En résumé, nous avons prévu une solution de passage de câble souterrain avec
 
 <div style="page-break-after: always; visibility: hidden"></div>
 
-## Les couts
-
-### Partie optique & matérielle
+## Partie optique & matérielle
 
 Nous avons pris en compte les spécificités de la mise en place de la gaine selon le type de chemin. Pour les chemins goudronnés, nous avons prévu que la gaine soit mise sous 80cm de profondeur pour protéger la fibre optique. La gaine sera en acier ou en PVC rigide pour garantir sa résistance. Elle sera également entourée de sable ou de gravier pour assurer sa solidité.
 
@@ -156,7 +156,7 @@ Ces coûts incluent les coûts des équipements optiques ainsi que les coûts de
 ## Partie genie civil
 
 Pour l'étude préliminaire, on peut estimer le temps nécessaire est d'environ 40 heures d'ingénieur RT. Pour réaliser ces tâches : la collecte des données de terrain, l'étude de faisabilité, la conception de l'infrastructure, la préparation des plans et des documents techniques, l'évaluation des coûts et des risques, l'obtention des autorisations réglementaires auprès des autorité local.
-Pour la partie génie civil du chantier, il faudra environ 30 heures de travail d'un technicien supérieur génie civil, 20 heures d'un technicien bâtiment et 20 heures d'un technicient RT. Soit un temps 110 heures.
+Pour la partie génie civil du chantier, il faudra environ 30 heures de travail d'un technicien supérieur génie civil, 20 heures d'un technicien bâtiment et 20 heures d'un technicient RT. Soit un temps d'environs 110 heures.
 
 Pour la démolition de la dalle de goudron, la location d'une micropelle d’1 tonne est d'environ 200 € par jour et des autres équipements et l'essence il y en a pour 500€ de plus donc un total de 700€ par jour soit pour une semaine 4900€.
 
@@ -166,7 +166,7 @@ La partie goudronnée est de 207.5m. Pour creusé de 0.80m de profondeur(Norme p
 
 Pour la partie goudronné de 207.5m allant du CT3 au CT4 prendra donc 35 heures, 4668.75€ + (700€*7) = 9568,75€ sans compte les salaires.
 
-Pour l'allée sablonneuse il faut compter 0.80m de profondeur au lieu de 0.50m habituellemment comme la route sera probablement goudronnée, ce qui amène à 16 heures de travails et 1000€ de locations de matériels. Etant donnée que c'est du sable il n'y as pas besoins de deblayer les gravats.
+Pour l'allée sablonneuse il faut compter 0.80m de profondeur au lieu de 0.60m habituellemment comme la route sera probablement goudronnée, ce qui amène à 16 heures de travails et 1000€ de locations de matériels. Etant donnée que c'est du sable il n'y as pas besoins de deblayer les gravats.
 
 Nettoyer les fourreaux existant afin d'avoir une facilité de tirage pour le projet et future projet. Il y a 1310m d'ancien fourreau à nettoyer cela coutera en moyenne 400€ par 100m ce qui fera un coût de 13,1*400 = 5240€. Durant environs 8 heures.
 
@@ -176,18 +176,17 @@ Le temps de pose des chambre de tirage est au minimum d'une demie journée et au
 
 La durée total des travaux est estimé à 217 heures soit environ 5 semaines de travaux :
 
-| Poste                             | Heures   | Total    |
-| ---                               | ---      | ---      |
-| Partie étude                      | 110      |          |
-| Technicien RT                     | 35       |          |
-| Technicien bâtiment               | 16       |          |
-| Ouvrier bâtiment                  | 8        |          |
-| Technicien supérieur génie civil  | 20       |          |
-|                                   |          |          |
-|                                   |          |          |
-|                                   |          |          |
-| Total                             | 14       |          |
-
+| Poste                             | Heures   |
+| ---                               | ---      |
+| Partie étude                      | 110      |
+| Partie rue goudronnées            | 35       |
+| Partie allée sablonneuse          | 16       |
+| Lavement des fourreaux            | 8        |
+| Tirage de la fibre                | 20       |
+| Pose des chambre de tirage        | 14       |
+| Pose PMI                          | 6        |
+| Pose/Installation PTO             | 8        |
+| Total                             | 217      |
 ### Cout en main d'oeuvre
 
 | Poste                             | Employés  | Heures | Salaire horaire         | Total    |
@@ -200,6 +199,8 @@ La durée total des travaux est estimé à 217 heures soit environ 5 semaines de
 | Total                             |           |        |                         | 76 401€  |
 
 Les salaires sont calculés en coût total employeur : 1,3 x salaire brut.
+
+<div style="page-break-after: always; visibility: hidden"></div>
 
 ### Cout en materielle
 
@@ -217,10 +218,18 @@ Donc pour récapituler, voici un tableau résumant les coûts de la solution env
 
 Soit un coût total de 137 483,75€.
 
-### Source materielle
+### Source genie civil
 
 |Matérielle                             |Lien|
 |---                                    |---|
 |Goudrons                               | https://www.travaux.com/jardin-et-exterieur/guide-des-prix/prix-goudronnage-bitume |
 |Gravats                                | https://www.prix-pose.com/evacuation-gravats/ |
-|Grillage de Chantier en Plastique Vert | https://prozon.com/barrieres-separateurs/2618-grillage-plastique-h12m-vert-50m.html?gclid=CjwKCAiAu5agBhBzEiwAdiR5tO2CBbo43-yisL6CsN3N7a1Kxtxb4jF32MUEMJvcvl6rwIX5KbFkLxoC0z8QAvD_BwE |
+|Grillage de Chantier en Plastique Vert | https://prozon.com/barrieres-separateurs/2618-grillage-plastique-h12m-vert-50m.html |
+| Prix tranché et demolition            | https://www.ootravaux.fr/installation-entretien/assainissement/prix-reparation-canalisation.html |
+| Prix location matériels               | https://www.travauxbricolage.fr/travaux-exterieurs/terrasse-beton/casser-couper-dalle-beton/ |
+| Temps travau                          | https://extenso-entreprises.com/bureau-d-etude-fibre-optique/ |
+| Prix moyen deploiement                | https://lafibre.info/techniques-deploiement/prix-dun-raccordement-la-fibre-pour-un-nra-km/12/ |
+
+## Conclusion
+
+En conclusion, notre solution permettra de raccorder l'immeuble de standing à la fibre optique en tenant compte de l'infrastructure pour le futur. Le temps de travail estimé est de 5 semaines, durant lequel il faudra déposer une demande de travaux à la mairie de Metz. Le coût total de la solution est estimé à 144 773,68 € TTC, incluant les coûts optique, matérielle et genie civil.
